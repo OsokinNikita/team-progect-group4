@@ -1,0 +1,33 @@
+<section class="galery">
+    <div class="container">
+        <div class="slider midle">
+            <ul class="sliders">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+
+                <li class="slide s1">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./gallery.jpg 1x, ./gallery-x2.jpg 3x"/> 
+                  <img src="./gallery.jpg" alt="">
+                </picture>
+                </li>
+                <li class="slide">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./galery2.jpg 1x, ./galery2x2.jpg 2x"/> 
+                  <img src="./galery2.jpg" alt="">
+                </picture>
+                </li>
+                <li class="slide">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./galery3.jpg 1x, ./galery3x2.jpg 2x"/> 
+                  <img src="./galery3.jpg" alt=""></li>
+            </ul>
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+            </div>
+        </div>
+    </div>
+    </section>
