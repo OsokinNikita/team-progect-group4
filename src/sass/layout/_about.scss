@@ -1,6 +1,15 @@
 .aboute {
     padding-top: 60px;
     background-color: #84A178;
+    margin: 0 auto;
+    max-width: 480px;
+
+    &__wrap {
+        max-width: 210px;
+        margin-bottom: 32px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     &__label {
         margin-bottom: 12px;
@@ -9,21 +18,33 @@
         line-height: calc(22 / 18);
         text-align: center;
         color: #FCFCFC;
+        text-transform: uppercase;
     }
 
     &__title {
         font-family: "Seymour One", sans-serif;
-        margin-bottom: 32px;
         font-weight: 400;
         font-size: 30px;
         line-height: calc(38 / 30);
         text-align: center;
         letter-spacing: .04em;
         color: #FCFCFC;
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        margin-bottom: 4px;
     }
 
     &__text {
-        margin-bottom: 4px;
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+
         font-weight: 400;
         font-size: 12px;
         line-height: calc(21 / 12);
@@ -33,11 +54,15 @@
     }
 
     &__btn {
-        margin-bottom: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin: 0 auto;
         font-weight: 600;
         font-size: 14px;
         line-height: calc(18 / 14);
-        text-align: center;
+
         color: #131313;
 
         background-color: #F8D24E;
