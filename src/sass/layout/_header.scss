@@ -1,27 +1,21 @@
 .header {
   &__container {
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    margin-right: auto;
+    margin-left: auto;
     background-color: #84a17868;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 
     padding: 0 20px;
     min-width: 320px;
     max-width: 480px;
-    width: 100%;
-
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-    }
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -47,8 +41,5 @@
     &--current {
       color: #131313;
     }
-
-    font-size: 32px;
-    line-height: calc(39 / 32);
   }
 }
