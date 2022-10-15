@@ -4,15 +4,15 @@
   margin-right: auto;
   margin-left: auto;
 
-  // @include breakpoint-min($tablet) {
-  //   max-width: none;
-  // }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 
-  // @include breakpoint-min($desktop) {
-  //   max-width: none;
-  //   padding: 94px 0;
-  // }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
+
 .section-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -87,15 +87,10 @@
   }
 
   &__img {
-    // position: absolute;
-    // bottom: 0;
-    // left: 50%;
-    // transform: translateX(-50%);
     display: flex;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
-    transform: scale(1.2);
   }
 
   &__img-decoration {
@@ -103,6 +98,5 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    // width: 100%;
   }
 }
