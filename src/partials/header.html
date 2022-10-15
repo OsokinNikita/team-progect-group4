@@ -1,29 +1,137 @@
-<div class="container header__container">
-  <a class="logo" href="./index.html">
-    <img class="logo--image" src="./image/logo/logo.png" alt="logo" />
-  </a>
-  <button
-    class="open-menu-btn js-open-menu"
-    type="button"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-    aria-label="Кнопка мобільного меню"
-  >
-    <svg
-      class="open-menu-btn__icon"
-      width="32"
-      height="32"
-      aria-label="Перемикач мобільного меню"
+<div class="container header">
+  <div class="header__container">
+    <a class="logo" href="./index.html">
+      <picture>
+        <!-- <source
+        srcset="
+          ./image/hero/desctop/logo/logo-desctop.webp    1x,
+          ./image/hero/desctop/logo/logo-desctop@2x.webp 2x,
+          ./image/hero/desctop/logo/logo-desctop@3x.webp 3x
+        "
+        type="image/webp"
+        media="(min-width: 1200px)"
+      /> -->
+        <source
+          srcset="
+            ./image/hero/desctop/logo/logo-desctop.png    1x,
+            ./image/hero/desctop/logo/logo-desctop@2x.png 2x,
+            ./image/hero/desctop/logo/logo-desctop@3x.png 3x
+          "
+          type="image/jpg"
+          media="(min-width: 1200px)"
+        />
+        <!-- <source
+                  srcset="
+                    ./image/hero/tablet/logo/logo-tablet.webp    1x,
+                    ./image/hero/tablet/logo/logo-tablet@2x.webp 2x,
+                    ./image/hero/tablet/logo/logo-tablet@3x.webp 3x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                /> -->
+        <source
+          srcset="
+            ./image/hero/tablet/logo/logo-tablet.png    1x,
+            ./image/hero/tablet/logo/logo-tablet@2x.png 2x,
+            ./image/hero/tablet/logo/logo-tablet@3x.png 3x
+          "
+          type="image/jpg"
+          media="(min-width: 768px)"
+        />
+
+        <!-- <source
+                  srcset="
+                    ./image/hero/mobile/logo/logo-mobile.webp    1x,
+                    ./image/hero/mobile/logo/logo-mobile@2x.webp 2x,
+                    ./image/hero/mobile/logo/logo-mobile@3x.webp 3x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                /> -->
+        <source
+          srcset="
+            ./image/hero/mobile/logo/logo-mobile.png    1x,
+            ./image/hero/mobile/logo/logo-mobile@2x.png 2x,
+            ./image/hero/mobile/logo/logo-mobile@3x.png 3x
+          "
+          type="image/jpg"
+          media="(max-width: 767px)"
+        />
+
+        <img
+          class="logo--image"
+          src="./image/hero/mobile/logo/logo-mobile.png"
+          alt="logo"
+        />
+      </picture>
+    </a>
+    <button
+      class="open-menu-btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Кнопка мобільного меню"
     >
-      <use href="./image/icons.svg#mobile-menu"></use>
-    </svg>
-  </button>
+      <svg
+        class="open-menu-btn__icon"
+        width="32"
+        height="32"
+        aria-label="Перемикач мобільного меню"
+      >
+        <use href="./image/icons.svg#mobile-menu"></use>
+      </svg>
+    </button>
+  </div>
   <div class="menu-container js-menu-container" id="mobile-menu">
     <a class="logo" href="./index.html">
-      <img class="logo--image" src="./image/logo/logo.png" alt="logo" />
+      <picture>
+        <!-- <source
+                  srcset="
+                    ./image/hero/tablet/logo/logo-tablet.webp    1x,
+                    ./image/hero/tablet/logo/logo-tablet@2x.webp 2x,
+                    ./image/hero/tablet/logo/logo-tablet@3x.webp 3x
+                  "
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                /> -->
+        <source
+          srcset="
+            ./image/hero/tablet/logo/logo-tablet.png    1x,
+            ./image/hero/tablet/logo/logo-tablet@2x.png 2x,
+            ./image/hero/tablet/logo/logo-tablet@3x.png 3x
+          "
+          type="image/jpg"
+          media="(min-width: 768px)"
+        />
+
+        <!-- <source
+                  srcset="
+                    ./image/hero/mobile/logo/logo-mobile.webp    1x,
+                    ./image/hero/mobile/logo/logo-mobile@2x.webp 2x,
+                    ./image/hero/mobile/logo/logo-mobile@3x.webp 3x
+                  "
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                /> -->
+        <source
+          srcset="
+            ./image/hero/mobile/logo/logo-mobile.png    1x,
+            ./image/hero/mobile/logo/logo-mobile@2x.png 2x,
+            ./image/hero/mobile/logo/logo-mobile@3x.png 3x
+          "
+          type="image/jpg"
+          media="(max-width: 767px)"
+        />
+
+        <img
+          class="logo--image"
+          src="./image/hero/mobile/logo/logo-mobile.png"
+          alt="logo"
+        />
+      </picture>
     </a>
     <button class="menu-container__close-btn js-close-menu" type="button">
-      <svg width="32" height="32">
+      <svg class="menu-container__close-icon" width="32" height="32">
         <use href="./image/icons.svg#close-mobile-menu"></use>
       </svg>
     </button>
@@ -43,6 +151,23 @@
         </li>
       </ul>
     </nav>
-    <button class="mobile-menu-btn" type="button">Buy now</button>
+    <button class="mobile-menu-btn" type="button">
+      Buy now
+      <svg
+        width="12"
+        height="12"
+        viewBox="0 0 12 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 2L8.95 6L4 10"
+          stroke="#131313"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
   </div>
 </div>
