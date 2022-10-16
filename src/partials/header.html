@@ -1,5 +1,5 @@
-<div class="container header">
-  <div class="header__container">
+<div class="header">
+  <div class="container header__container">
     <a class="logo" href="./index.html">
       <picture>
         <source
@@ -65,22 +65,30 @@
         />
       </picture>
     </a>
-    <button
-      class="open-menu-btn js-open-menu"
-      type="button"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-      aria-label="Кнопка мобільного меню"
-    >
-      <svg
-        class="open-menu-btn__icon"
-        width="32"
-        height="32"
-        aria-label="Перемикач мобільного меню"
+    <div class="btn-wrapper">
+      <button
+        class="open-menu-btn js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Кнопка мобільного меню"
       >
-        <use href="./image/icons.svg#mobile-menu"></use>
-      </svg>
-    </button>
+        <svg
+          class="open-menu-btn__icon"
+          width="32"
+          height="32"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use href="./image/icons.svg#mobile-menu"></use>
+        </svg>
+      </button>
+      <button class="header__btn buy-now-btn" type="button">
+        Buy now
+        <svg width="12" height="12">
+          <use href="./image/icons.svg#after-element"></use>
+        </svg>
+      </button>
+    </div>
   </div>
   <div class="menu-container js-menu-container" id="mobile-menu">
     <a class="logo" href="./index.html">
@@ -151,9 +159,8 @@
         </li>
       </ul>
     </nav>
-    <button class="mobile-menu-btn" type="button">
+    <button class="mobile-menu-btn buy-now-btn" type="button">
       Buy now
-
       <svg width="12" height="12">
         <use href="./image/icons.svg#after-element"></use>
       </svg>
