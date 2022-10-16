@@ -33,6 +33,32 @@
         text-transform: uppercase;
     }
 
+    &__thumb {
+        position: relative;
+        height: 300px;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__circle {
+        position: absolute;
+        width: 278px;
+        height: 278px;
+        border-radius: 50%;
+        background-color: rgba(248, 210, 78, 0.7);
+    }
+
+    &__image {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: left bottom;
+        background-color: #84A178;
+
+    }
+
     &__list {
         margin-bottom: 20px;
     }
