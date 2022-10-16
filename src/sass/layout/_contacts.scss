@@ -4,6 +4,12 @@
 
 .contacts__list {
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 16px;
+    padding: 0 12px;
+    margin-bottom: 60px;
+}
 }
 
 .contacts__item {
@@ -17,6 +23,15 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+     @media screen and (min-width: 768px) {
+    width: 224px;
+    margin: 0;
+    margin-bottom: 0;
+    padding: 40px 24px;
+    &:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 }
 .contacts__store {
   display: inline-block;
@@ -32,6 +47,10 @@
   color: #131313;
   background: #f8d24e;
   border-radius: 4px;
+    @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 16px;
+}
 }
 .contacts__location {
   font-family: 'Montserrat';
@@ -47,6 +66,11 @@
 .contacts_sity {
   display: block;
   margin-bottom: 8px;
+  
+     @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
 }
 
 .contacts__address {
@@ -64,16 +88,27 @@
     text-decoration: underline;
     color: #d6936d;
   }
+    @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 14px;
+}
 }
 .contacts__opening-hours {
   padding: 25px 0;
   margin-bottom: 25px;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
+      @media screen and (min-width: 768px) {
+    padding: 32px 0;
+    margin-bottom: 32px;
+}
 }
 .contacts__opening-hours_item {
   &:not(:last-child) {
     margin-bottom: 8px;
+     @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+}
   }
 }
 .contacts__day {
@@ -84,6 +119,9 @@
   line-height: 186%;
 
   color: #131313;
+     @media screen and (min-width: 768px) {
+    font-size: 14px
+}
 }
 .contacts__time {
   font-family: 'Montserrat';
@@ -93,6 +131,9 @@
   line-height: 186%;
 
   color: #ababab;
+     @media screen and (min-width: 768px) {
+    font-size: 14px
+}
 }
 // .contacts__mail-tel {
 // }
@@ -103,7 +144,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 186%;
 
   color: #131313;
 
@@ -111,9 +152,18 @@
   &:focus {
     color: #d6936d;
   }
+     @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 183%;
 }
-// .contacts__buttons-list {
-// }
+}
+.contacts__buttons-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+}
 
 .contacts__buttons_item {
      &:not(:last-child) {
