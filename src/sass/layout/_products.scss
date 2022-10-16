@@ -1,17 +1,18 @@
     // overful
 
-    // .product {
-        
-    // }
     .section {
         min-width: 320px;
     }
 
-    html {
+    .product {
+        background: url(./../image/mobile/backgraund-2-block.jpg);
         background-repeat: repeat-y;
-        background-position: center center;
-       
+        background-position: center;
+        
         background-size: 430%;
+
+        padding-top: 60px;
+        
     }
 
     .product__label {
@@ -40,52 +41,68 @@
     }
 
     .product-list {
-        position: relative;
         padding-left: 0;
         text-align: center;
+    }
+
+    .product-list:not(:last-child) {
+        margin-bottom: 56px;
+    }
+
+    .product-list__items {
+        position: relative;
+        z-index: 1;
         margin-bottom: 56px;
     }
 
 
     .product-list__img {
         border-radius: 50%;
-        transform: translateY(-10px);
+        transform: translateY(-11px);
     }
 
+    .icon {
+        bottom: 20px;
+    }
 
-    .product-list__background {
-        display: block;
+    .product-list__background-ice {
+        width: 200px;
+        
         margin-left: auto;
         margin-right: auto;
-        background-color: rgba(156, 190, 143, 0.7);
+        margin-bottom: 20px;
+    
+        box-shadow: 0px 5.34px 20.03px (rgba(10, 136, 23, 0.25));
         border-radius: 50%;
+        background-color: rgba(156, 190, 143, 0.7);
         
-        width: 200px;
+        z-index: 0;
     }
 
-    /* .product-list__backgroun-fone {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:rgba(174, 198, 165, 1);
-    width: 280px;
-    height: 420px;
-    border-radius: 24px;
-    bottom: 100px;
-} */
-
-    .product-list__background::after {
+    .product-list__background-ice::before {
         content: "";
         position: absolute;
-        transform: translateX(-240px);
-        top: 90px;
-        z-index: -4;
-
+        display: block;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        z-index: -1;
         width: 280px;
         height: 420px;
-        border-radius: 24px;
+        border-radius: 24px; 
+        background-color: rgba(174, 198, 165, 1);
+    }
 
-        background-color: #AEC6A5;
+    .product-list__open-btn {
+        background-color: transparent;
+        border: none;
+    }
+
+    .product-list__open-btn:hover {
+        transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+        fill: tomato;
+        cursor: pointer;
     }
 
     .product-list__name {
@@ -94,6 +111,8 @@
         font-size: 20px;
         line-height: 24px;
         letter-spacing: 4%;
+        margin-bottom: 40px;
+       
     }
 
     .product-list__descr {
@@ -102,38 +121,80 @@
         font-size: 14px;
         line-height: 25px;
         letter-spacing: 4%;
+        margin: auto;
+        margin-bottom: 90px;
 
         width: 200px;
         height: 124px;
-        margin: auto;
-        margin-bottom: 90px;
     }
+
+    // .product-list__open-btn {
+    //     margin-bottom: 76px;
+    // }
 
     .product-list__background-coffee {
         display: block;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; 
+        margin-bottom: 20px;
         
-        
-        background-color: rgba(248, 210, 78, 0.7);
+        box-shadow: 0px 5.34px 20.03px (rgba(153, 114, 23, 0.25));
         border-radius: 50%;
+        z-index: 0;
 
         width: 200px;
     }
 
-    .product-list__background-coffee::after {
+    .product-list__background-coffee::before {
         content: "";
         position: absolute;
-        transform: translateX(-245px);
-        top: 90px;
+        display: block;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
-        z-index: -4;
+        z-index: -1;
 
         background-color: rgba(239, 212, 120, 1);
+        transform: translate(-50px, -50px);
+        width: 280px;
+        height: 420px;
+        border-radius: 24px;
+
+        overflow: hidden;
+    }
+
+    .product-list__background-milkshakes {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        box-shadow: 0px 5.34px 20.03px (rgba(0, 0, 0, 0.25));
+        border-radius: 50%;
+        background-color: rgba(213, 117, 63, 0.7);
+        z-index: 0;
+
+        width: 200px;
+    }
+
+    .product-list__background-milkshakes::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        z-index: -1;
+
+        background-color: rgba(214, 147, 109, 1);
+        transform: translate(-50px, -50px);
+
         width: 280px;
         height: 420px;
         border-radius: 24px;
     }
+
 
    
 
