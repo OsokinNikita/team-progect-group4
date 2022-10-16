@@ -1,0 +1,129 @@
+<div class="container">
+  <button class="button button__hero" type="button" data-modal-buy-open>
+    Buy now modal
+  </button>
+</div>
+
+<!-- Buy now modal -->
+<div class="backdrop is-hidden" data-modal-buy>
+  <div class="modal">
+    <button class="button-close" type="button" data-modal-buy-close>
+      <svg class="button-close__icon">
+        <use href="./image/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <strong class="modal__title">Buy now</strong>
+    <ul class="cards">
+      <li class="cards__list">
+        <div class="cards__thumb">
+          <input
+            class="cards__checkbox visually-hidden"
+            id="checkbox"
+            type="checkbox"
+            name="checkbox"
+            value="checkbox"
+          />
+          <label for="checkbox">
+            <img
+              class="cards__img"
+              scrset="./image/mobile/product1.jpg 1x, 
+                ./image/mobile/product1-x2.jpg 2x"
+              src="./image/mobile/product1.jpg"
+              alt="ice-cream"
+              width="132"
+              height="132"
+            />
+            <div class="cards__circle"></div>
+            <p class="cards__name">ice cream</p>
+          </label>
+        </div>
+      </li>
+      <li class="cards__list">
+        <div class="cards__thumb">
+          <input
+            class="cards__checkbox visually-hidden"
+            id="checkbox"
+            type="checkbox"
+            name="checkbox"
+            value="checkbox"
+          />
+          <label for="checkbox">
+            <img
+              class="cards__img"
+              srcset="
+                ./image/mobile/product2.jpg    1x,
+                ./image/mobile/product2-x2.jpg 2x
+              "
+              src="./image/mobile/product2.jpg"
+              alt="ice-cream"
+              width="132"
+              height="132"
+            />
+            <div class="cards__circle"></div>
+            <p class="cards__name">ice coffee</p>
+          </label>
+        </div>
+      </li>
+      <li class="cards__list">
+        <div class="cards__thumb">
+          <input
+            class="cards__checkbox visually-hidden"
+            id="checkbox"
+            type="checkbox"
+            name="checkbox"
+            value="checkbox"
+          />
+          <label for="checkbox">
+            <img
+              class="cards__img"
+              srcset="
+                ./image/mobile/product3.jpg    1x,
+                ./image/mobile/product3-x2.jpg 1x
+              "
+              src="./image/mobile/product3.jpg"
+              alt="ice-cream"
+              width="132"
+              height="132"
+            />
+            <div class="cards__circle"></div>
+            <p class="cards__name">milkshake</p>
+          </label>
+        </div>
+      </li>
+    </ul>
+    <form class="register-form" name="register-form">
+      <div class="register-form__group" role="group">
+        <input
+          class="register-form__input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+        <input
+          class="register-form__input"
+          type="tel"
+          name="phone"
+          placeholder="Phone"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          minlength="13"
+          maxlength="13"
+          title="Phone must be 000-000-00-00"
+        />
+        <textarea
+          class="register-form__textarea"
+          name="comment"
+          cols="30"
+          rows="10"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="button button__modal-sent" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="./js/modal-buy.js"></script>
