@@ -26,6 +26,10 @@
   }
 }
 
+.logo__image {
+  max-width: none;
+}
+
 .buy-now-btn {
   &.header__btn {
     margin: 24px 0;
@@ -35,6 +39,11 @@
 
     @media screen and (max-width: 767px) {
       display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 28px 0;
+      min-width: 152px;
     }
   }
 }
@@ -52,6 +61,12 @@
     @media screen and (min-width: 768px) {
       gap: 40px;
     }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 27px;
+    }
   }
 
   &__link {
@@ -61,9 +76,15 @@
     line-height: calc(39 / 32);
     color: #fcfcfc;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &--current {
+    &:hover,
+    &:focus {
       color: #131313;
+
+      @media screen and (min-width: 1200px) {
+        color: #f8d24e;
+      }
     }
 
     font-size: 32px;
@@ -72,6 +93,13 @@
     @media screen and (min-width: 768px) {
       font-size: 48px;
       line-height: calc(59 / 48);
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: calc(20 / 16);
+      line-height: 20px;
+      padding: 40px 0;
     }
   }
 }

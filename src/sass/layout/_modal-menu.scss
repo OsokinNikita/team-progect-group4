@@ -20,7 +20,17 @@
     padding: 140px 0 0 0;
   }
 
-  .logo {
+  @media screen and (min-width: 1200px) {
+    position: static;
+    padding: 0;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    overflow: visible;
+    background-color: transparent;
+  }
+
+  .logo__mobile-menu {
     position: absolute;
     top: 12px;
     left: 31px;
@@ -28,6 +38,10 @@
     @media screen and (min-width: 768px) {
       top: 20px;
       left: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: none;
     }
   }
 
@@ -60,6 +74,10 @@
       top: 32px;
       right: 32px;
     }
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
   }
 
   &__close-icon {
@@ -77,6 +95,10 @@
 
   &__icon {
     display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }
 
