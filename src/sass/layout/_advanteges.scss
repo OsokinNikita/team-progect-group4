@@ -1,0 +1,104 @@
+.adventeges {
+    background-color: #84A178;
+    padding-top: 42px;
+    padding-bottom: 60px;
+    
+    @media screen and (max-width: 768px) {
+        &__item {
+            width: 230px;
+        }
+      }
+      &__item {
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+    &__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    margin-bottom: 18px;
+    }
+    
+    
+    &__txt {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: center;
+    color: #FCFCFC;
+  
+    }
+    
+    
+     &__thumb--cow::before{
+        content:"";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+      
+        
+        background-image: url(../image/desctop/cow__@1x.png);
+        background-size: 50px 50px;
+       
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        & {
+          background-image: url(../image/desctop/cow__@2x.png);
+        }
+      }
+        }
+    
+    
+        
+       &__thumb--weight::before {
+          @extend .adventeges__thumb--cow;
+    
+          background-image: url(../image/desctop/weight__@1x.png);
+         
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          & {
+            background-image: url(../image/desctop/weight__@2x.png);
+          }
+       }
+    }
+    
+    
+    &__thumb--ice::before {
+       @extend .adventeges__thumb--cow;
+    
+       background-image: url(../image/desctop/ice__@1x.png);
+      
+       @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+       & {
+         background-image: url(../image/desctop/ice__@2x.png);
+       }
+    }
+    }
+  
+    &__thumb--cow {
+        margin-bottom: 28px;
+    }
+    &__thumb--weight {
+        margin-bottom: 22px;
+    }
+    }
