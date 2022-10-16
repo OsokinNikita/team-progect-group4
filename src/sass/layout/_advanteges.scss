@@ -3,11 +3,9 @@
     padding-top: 42px;
     padding-bottom: 60px;
     
-    @media screen and (max-width: 767px) {
-        &__item {
-            width: 230px;
-        }
-      }
+   
+       
+      
       &__item {
         margin-left: auto;
         margin-right: auto;
@@ -49,7 +47,7 @@
       
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 20px;
+        margin-bottom: 28px;
       
         
         background-image: url(../image/desctop/cow__@1x.png);
@@ -94,11 +92,42 @@
        }
     }
     }
-  
-    &__thumb--cow {
-        margin-bottom: 28px;
+    @media screen and (max-width: 767px){
+        &__thumb--cow {
+            margin-bottom: 28px;
+        }
+        &__thumb--weight {
+            margin-bottom: 22px;
+        }
+        &__item {
+            width: 230px;
+        }
     }
-    &__thumb--weight {
-        margin-bottom: 22px;
+    
+
+
+    @media screen and (min-width: 768px) {
+        &__list {
+            display: flex;
+            gap: 80px;
+            justify-content: center;
+        }
+        &__title {
+            font-size: 48px;
+            line-height: 59px;
+        }
+        &__txt {
+             font-size: 14px;
+             line-height: 174%;
+        }
+        &__item {
+            width: 152px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+       & {
+        padding-top: 48px;
+        padding-bottom: 204px;
+       } 
     }
     }
