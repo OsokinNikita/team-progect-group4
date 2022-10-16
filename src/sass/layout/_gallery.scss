@@ -1,26 +1,32 @@
-.slider{
+
+.galery__slider{
+   display: block;
+   margin: 0 auto;
     width: 279px;
     height: 130.03px;
-    left: 20px;
-    top: 3970.37px;
     overflow: hidden;
     border-radius: 7.40681px;
-    background: url(brooke-lark-8beTH4VkhLI-unsplash.jpg);
      }
+
+  .gal{
+    position: relative;
+    height: 130px;
+  }
      .midle{
-    position: absolute;
+        position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
      }
-     .navigation{
+     .galery__navigation{
       position: absolute;
       bottom: 5px;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
      }
-     .bar{
+  
+     .galery__bar{
       width: 15px;
       height: 5px;
       margin: 6px;
@@ -30,7 +36,7 @@
       border-radius: 3px;
       transition: all .4s ease;
      }
-     .bar:hover{
+     .galery__bar:hover{
       opacity: 0.8;
       transform: scale(1.1);
      }
@@ -39,16 +45,16 @@
       visibility: hidden;
      }
     
-     .sliders{
+     .galery__sliders{
       width: 400%;
       height: 100%;;
       display: flex;
      }
-     .slide{
+     .galery__slide{
       width: 25%;
       transition: all .6s ease;
      }
-     .slide img{
+     .galery__slide img{
       width: 100%;
       height: 100%;
      }
