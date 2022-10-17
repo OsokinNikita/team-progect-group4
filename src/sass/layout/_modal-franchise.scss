@@ -190,6 +190,9 @@
       font-size: 14px;
     }
   }
+  // &__input:required:invalid {
+  //   border-color: #f44336;
+  // }
   &__textarea {
     display: block;
     width: 100%;
@@ -223,6 +226,9 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
     }
+  }
+  &__textarea:required {
+    border-color: #f44336;
   }
 }
 
@@ -267,9 +273,11 @@
       font-size: 14px;
     }
   }
+  &__modal-sent:focus,
   &__modal-sent:hover {
     color: var(--t-btn-focus-color);
     background-color: var(--bg-btn-hover-color);
+    outline: none;
   }
   // &__modal-sent:disabled {
   //   background-color: var(--bg-modal-disabled-coloror);
