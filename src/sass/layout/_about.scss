@@ -36,27 +36,25 @@
     &__thumb {
         position: relative;
 
-        height: 300px;
-        margin-bottom: 60px;
+        max-width: 278px;
+
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     &__circle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        fill: rgba(248, 210, 78, 0.7);
     }
 
     &__image {
         border-radius: 50%;
         overflow: hidden;
         position: absolute;
-        width: 278px;
-        height: 278px;
+        width: 100%;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -118px);
-        object-fit: contain;
+        transform: translate(-50%, -117px);
     }
 
     &__list {
