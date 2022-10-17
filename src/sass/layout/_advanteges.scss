@@ -85,7 +85,7 @@
     &__thumb--ice::before {
        @extend .adventeges__thumb--cow;
 
-      
+       margin-bottom: 16px;
     
        background-image: url(../image/desctop/ice__@1x.png);
       
@@ -98,14 +98,15 @@
     }
     }
     @media screen and (max-width: 767px){
-        &__thumb--cow {
-            margin-bottom: 28px;
-        }
-        &__thumb--weight {
-            margin-bottom: 22px;
-        }
+
+      &__item:not(:last-child) {
+        margin-bottom: 28px;
+      }
+
+
         &__item {
             width: 230px;
+            
         }
        
     }
