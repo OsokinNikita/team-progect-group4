@@ -47,8 +47,10 @@
       
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 28px;
-      
+
+        
+        margin-bottom: 16px;
+       
         
         background-image: url(../image/desctop/cow__@1x.png);
         background-size: 50px 50px;
@@ -66,6 +68,7 @@
         
        &__thumb--weight::before {
           @extend .adventeges__thumb--cow;
+          margin-bottom: 16px;
     
           background-image: url(../image/desctop/weight__@1x.png);
          
@@ -81,6 +84,8 @@
     
     &__thumb--ice::before {
        @extend .adventeges__thumb--cow;
+
+       margin-bottom: 16px;
     
        background-image: url(../image/desctop/ice__@1x.png);
       
@@ -93,19 +98,18 @@
     }
     }
     @media screen and (max-width: 767px){
-        &__thumb--cow {
-            margin-bottom: 28px;
-        }
-        &__thumb--weight {
-            margin-bottom: 22px;
-        }
+
+      &__item:not(:last-child) {
+        margin-bottom: 28px;
+      }
+
         &__item {
             width: 230px;
+            
         }
+       
     }
     
-
-
     @media screen and (min-width: 768px) {
         &__list {
             display: flex;
@@ -130,4 +134,29 @@
         padding-bottom: 204px;
        } 
     }
+    @media screen and (min-width: 1200px) {
+        &__list {
+           
+            gap: 32px;
+           
+        }
+        &__title {
+            font-size: 58px;
+            line-height: 71px;
+        }
+        &__txt {
+             font-size: 16px;
+             line-height: 176%;
+        }
+        &__item {
+            width: 368px;
+        
+        }
+       & {
+        padding-top: 60px;
+        padding-bottom: 180px;
+       } 
+    }
+
+
     }
