@@ -6,9 +6,8 @@
 
     .product {
         background: url(./../image/mobile/backgraund-2-block.jpg);
-        background-position:top center;
-        
-        background-repeat: repeat-y, no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         padding-top: 60px;
         padding-bottom: 60px;
