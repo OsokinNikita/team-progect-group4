@@ -142,8 +142,33 @@ justify-content: center;
 
 color: #131313;
 cursor: pointer;
-&:hover,
-  &:focus {
-    background: #F8D24E;
+
+}
+.contacts__button--one{
+  background: #F8D24E;
+&:hover {
+    background: #0A8817;
+    border-color: #0A8817;
   }
+  &:focus {
+    outline: none;
+    border-color: #0A8817;
+    color: #FCFCFC;
+    background-color: transparent;
+  }
+}
+.contacts__button--two{
+  
+  &:hover {
+    border-color: #0A8817;
+  }
+  &:focus {
+    outline: none;
+    border-color: #0A8817;
+    color: #FCFCFC;
+  }
+}
+.contacts__icon{
+  margin-left: 6px;
+
 }
