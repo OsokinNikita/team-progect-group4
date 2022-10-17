@@ -68,7 +68,7 @@
         
        &__thumb--weight::before {
           @extend .adventeges__thumb--cow;
-          margin-bottom: 16px;
+         
     
           background-image: url(../image/desctop/weight__@1x.png);
          
@@ -85,7 +85,7 @@
     &__thumb--ice::before {
        @extend .adventeges__thumb--cow;
 
-       margin-bottom: 16px;
+     
     
        background-image: url(../image/desctop/ice__@1x.png);
       
