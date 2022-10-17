@@ -1,0 +1,39 @@
+<div class="container">
+  <button class="button button__hero" type="button" data-modal-map-open>
+    Our location modal
+  </button>
+</div>
+
+<!-- Our Locations modal  -->
+<div class="backdrop is-hidden" data-modal-map>
+  <div class="modal">
+    <button class="button-close" type="button" data-modal-map-close>
+      <svg class="button-close__icon">
+        <use href="./image/icons.svg#modal-close"></use>
+      </svg>
+    </button>
+    <strong class="modal__title modal__title-map">Our Locations</strong>
+    <iframe
+      class="location__map"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10346.290721678648!2d34.561669578803084!3d49.586949057355845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1665937096898!5m2!1suk!2sua"
+      width="400"
+      height="300"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    >
+    </iframe>
+    <div class="button-link">
+      <a
+        class="button btn-link link"
+        href="https://goo.gl/maps/TSGaUb2RrQ82MLFw5"
+        type="button"
+        rel="noopner noreferrer"
+      >
+        Open map
+      </a>
+    </div>
+  </div>
+</div>
+<script src="./js/modal-map.js"></script>
