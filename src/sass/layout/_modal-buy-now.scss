@@ -106,6 +106,8 @@
 
 .modal {
   width: 280px;
+  height: 98%;
+  overflow-y: scroll;
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
