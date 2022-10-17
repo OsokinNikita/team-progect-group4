@@ -30,18 +30,6 @@
   --trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// Resets
-.list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.link {
-  text-decoration: none;
-  color: currentColor;
-}
-
 .backdrop {
   position: fixed;
   top: 0;

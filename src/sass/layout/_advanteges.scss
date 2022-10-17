@@ -68,7 +68,7 @@
         
        &__thumb--weight::before {
           @extend .adventeges__thumb--cow;
-          margin-bottom: 16px;
+         
     
           background-image: url(../image/desctop/weight__@1x.png);
          
@@ -85,7 +85,7 @@
     &__thumb--ice::before {
        @extend .adventeges__thumb--cow;
 
-       margin-bottom: 16px;
+     
     
        background-image: url(../image/desctop/ice__@1x.png);
       
@@ -133,7 +133,14 @@
         padding-top: 48px;
         padding-bottom: 204px;
        } 
+       &__thumb--cow::before{
+        margin-bottom: 32px;
+       }
     }
+
+
+
+
     @media screen and (min-width: 1200px) {
         &__list {
            
@@ -156,6 +163,10 @@
         padding-top: 60px;
         padding-bottom: 180px;
        } 
+
+       &__thumb--cow::before{
+        margin-bottom: 40px;
+       }
     }
 
 
