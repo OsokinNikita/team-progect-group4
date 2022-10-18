@@ -51,6 +51,14 @@
         }
     }
 
+    &__group {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+    }
+
     &__thumb {
         position: relative;
 
