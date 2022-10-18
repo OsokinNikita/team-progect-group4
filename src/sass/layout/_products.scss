@@ -46,6 +46,260 @@
         screen and (min-resolution: 2dppx) {
             background-image: url('../image/desctop/backgraund-4-block-x2.jpg');
         }
+.section {
+  min-width: 320px;
+}
+
+.product-list__circle {
+    position: absolute;
+    box-shadow: 0px 5.34px 20.03px (rgba(10, 136, 23, 0.25));
+    border-radius: 50%;
+    z-index: -1;
+    fill: rgba(156, 190, 143, 0.7);
+}
+
+.product {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: white;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: (320px)) {
+    background-image: url('../image/mobile/backgraund-2-block.jpg');
+  }
+  @media screen and (min-width: (320px)) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 320px) and (min-resolution: 192dpi),
+    screen and (min-width: 320px) and (min-resolution: 2dppx) {
+    background-image: url('../image/mobile/backgraund-2-block-x2.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 82px;
+  }
+  @media screen and (min-width: (768px)),
+    screen and (min-width: (768px)),
+    screen and (min-width: (768px)) {
+    background-image: url('../image/tablet/backgraund-2-block.jpg');
+  }
+  @media screen and (min-width: (768px)) and (min-device-pixel-ratio: 2),
+    screen and (min-width: (768px)) and (min-resolution: 192dpi),
+    screen and (min-width: (768px)) and (min-resolution: 2dppx) {
+    background-image: url('../image/tablet/backgraund-2-block-x2.jpg');
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+    background-image: url('../image/desctop/backgraund-2-block.jpg');
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../image/desctop/backgraund-2-block-x2.jpg');
+  }
+}
+
+.product__label {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  display: block;
+  text-align: center;
+
+  margin-bottom: 12px;
+  color: #131313;
+}
+
+.product__header {
+  font-family: 'Seymour One';
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 38px;
+  display: block;
+  text-align: center;
+  letter-spacing: 4%;
+
+  margin-bottom: 40px;
+  color: #131313;
+}
+
+.product-list {
+  padding-left: 0;
+  text-align: center;
+}
+
+.product-list:not(:last-child) {
+  margin-bottom: 56px;
+}
+
+.product-list__items {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  z-index: 1;
+}
+
+.product-list__items:not(:last-child) {
+  margin-bottom: 56px;
+}
+
+.product-list__img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+//   transform: translateY(-11px);
+}
+
+.product-list__items::before {
+    top: 11px;
+    background-color: rgba(156, 190, 143, 0.7);
+}
+
+.icon {
+  bottom: 20px;
+}
+
+.product-list__background-ice {
+  position: relative;
+  width: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  transform: translateY(11px);
+
+  box-shadow: 0px 5.34px 20.03px (rgba(10, 136, 23, 0.25));
+  border-radius: 50%;
+  background-color: rgba(156, 190, 143, 0.7);
+}
+
+.product-list__items-ice::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -49%);
+
+  z-index: -1;
+
+  background-color: rgba(174, 198, 165, 1);
+
+  width: 280px;
+  height: 420px;
+  border-radius: 24px;
+
+  overflow: hidden;
+}
+
+.product-list__open-btn {
+  background-color: transparent;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.product-list__open-btn:hover {
+  cursor: pointer;
+}
+
+.product-list__name {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 4%;
+  margin-bottom: 40px;
+}
+
+.product-list__descr {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 4%;
+  margin: auto;
+  margin-bottom: 90px;
+
+  width: 200px;
+  height: 124px;
+}
+
+.product-list__background-coffee {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  box-shadow: 0px 5.34px 20.03px (rgba(153, 114, 23, 0.25));
+  border-radius: 50%;
+  transform: translateY(11px);
+
+  width: 200px;
+}
+
+.product-list__items-coffee::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -49%);
+
+  z-index: -1;
+
+  background-color: rgba(239, 212, 120, 1);
+
+  width: 280px;
+  height: 420px;
+  border-radius: 24px;
+
+  overflow: hidden;
+}
+
+.product-list__background-milkshakes {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(11px);
+  margin-bottom: 20px;
+
+  box-shadow: 0px 5.34px 20.03px (rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
+  background-color: rgba(213, 117, 63, 0.7);
+  bottom: 28px;
+  width: 200px;
+}
+
+.product-list__items-milkshakes::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -49%);
+
+  z-index: -1;
+
+  background-color: rgba(214, 147, 109, 1);
+
+  width: 280px;
+  height: 420px;
+  border-radius: 24px;
+
+  overflow: hidden;
+}
+
+ @media screen and (min-width: 768px) {
+    .product {
+        padding-top: 61px;
+        padding-bottom: 82px;
+        background-color: white;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     .product__label {
@@ -53,6 +307,8 @@
         font-weight: 800;
         font-size: 18px;
         line-height: 22px;
+        font-size: 22px;
+        line-height: 27px;
         display: block;
         text-align: center;
 
@@ -65,11 +321,14 @@
         font-weight: 900;
         font-size: 30px;
         line-height: 38px;
+        font-size: 34px;
+        line-height: 43px;
         display: block;
         text-align: center;
         letter-spacing: 4%;
 
         margin-bottom: 40px;
+        margin-bottom: 80px;
         color: #131313;
     }
 
@@ -243,3 +502,33 @@
    
 
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 41px;
+
+        padding-left: 33px;
+        padding-right: 31px;
+    }
+
+    .peoduct-list__items {
+        width: 224px;
+        height: 428px;
+        
+    }
+
+    .product-list__items-ice::before {
+        width: 224px;
+        height: 428px;
+    }
+
+    .product-list__items-coffee::before {
+        width: 224px;
+        height: 428px;
+    }
+
+    .product-list__items-milkshakes::before {
+        width: 224px;
+        height: 428px;
+    }
+}
