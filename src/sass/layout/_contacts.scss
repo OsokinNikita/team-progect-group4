@@ -1,13 +1,11 @@
 .contacts {
-  background: #84a178;
-  position: relative;
+  // background: #84a178;
+  
 }
 .contacts__container{
  
- position: absolute;
- top: -340px;
- left: 50%;
- transform: translateX(-50%);
+
+ 
   @media screen and (min-width: 768px) {
     top: -300px;
 }
