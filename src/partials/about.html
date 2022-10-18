@@ -7,20 +7,16 @@
         </div>
 
         <div class="about__box">
-            <div class="about__thumb">
-                <svg class="about__circle">
-                    <circle r="139" cx="139" cy="139" />
-                </svg>
-                <div class="about__image">
-                    <picture>
-                        <source media="(min-width: 768px)"
-                            srcset="./image/tablet/about.jpg 1x, ./image/tablet/about-x2.jpg 2x">
-                        <source media="(min-width: 480px)"
-                            srcset="./image/mobile/about.jpg 1x, ./image/mobile/about-x2.jpg 2x">
-                        <img src="./image/mobile/about.jpg" alt="gray cow grazing in the meadow">
-                    </picture>
-                </div>
+            <div class="about__background">
+                <picture>
+                    <source media="(min-width: 768px)"
+                        srcset="./image/tablet/about.jpg 1x, ./image/tablet/about-x2.jpg 2x">
+                    <source media="(min-width: 480px)"
+                        srcset="./image/mobile/about.jpg 1x, ./image/mobile/about-x2.jpg 2x">
+                    <img class="about__image" src="./image/mobile/about.jpg" alt="gray cow grazing in the meadow">
+                </picture>
             </div>
+
             <div class="about__group">
                 <ul class="about__list">
                     <li class="about__item">
