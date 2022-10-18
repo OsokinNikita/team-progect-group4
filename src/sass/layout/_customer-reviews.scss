@@ -73,12 +73,13 @@
   width: 85px;
   height: 85px;
   overflow: hidden;
+  vertical-align: middle;
   background-color: #6e6e6e;
   border-radius: 50%;
   z-index: 10;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 28x;
@@ -91,7 +92,8 @@
 .image {
   display: block;
   max-width: 100%;
-  height: auto;
+  object-fit: cover;
+  /* height: auto; */
 }
 .customer-reviews__text {
   display: flex;
