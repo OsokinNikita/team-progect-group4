@@ -11,6 +11,9 @@
   @media screen and (min-width: 768px) {
     top: -300px;
 }
+@media screen and (min-width: 1200px) {
+    top: -95px;
+}
 }
 .contacts__list {
     margin-bottom: 32px;
@@ -20,6 +23,10 @@
     gap: 16px;
     
     margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+    gap: 32px;
+    margin-bottom: 64px;
 }
 }
 
@@ -42,6 +49,10 @@
     &:not(:last-child) {
     margin-bottom: 0;
   }
+}
+@media screen and (min-width: 1200px) {
+    width: 368px;
+    padding: 40px 40px;
 }
 }
 .contacts__store {
@@ -82,6 +93,10 @@
     margin-bottom: 12px;
     font-size: 14px;
 }
+ @media screen and (min-width: 1200px) {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
 }
 
 .contacts__address {
@@ -100,8 +115,12 @@
     color: #d6936d;
   }
     @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
+    margin-bottom: 26px;
     font-size: 14px;
+}
+ @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+    font-size: 16px;
 }
 }
 .contacts__opening-hours {
@@ -133,6 +152,12 @@
      @media screen and (min-width: 768px) {
     font-size: 14px
 }
+ @media screen and (min-width: 1200px) {
+    
+    font-size: 16px;
+    letter-spacing: 0.04em;
+}
+
 }
 .contacts__time {
   font-family: 'Montserrat';
@@ -144,6 +169,11 @@
   color: #ababab;
      @media screen and (min-width: 768px) {
     font-size: 14px
+}
+@media screen and (min-width: 1200px) {
+    
+    font-size: 16px;
+    
 }
 }
 // .contacts__mail-tel {
@@ -173,6 +203,11 @@
     display: flex;
     gap: 16px;
     justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+    
+    font-size: 16px;
+    
 }
 }
 
