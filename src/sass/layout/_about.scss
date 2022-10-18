@@ -55,12 +55,11 @@
         @media screen and (min-width: 768px) {
             display: flex;
             justify-content: space-between;
-            align-items: start;
         }
     }
 
     &__background {
-        width: 278px;
+        max-width: 278px;
         background-color: rgba(248, 210, 78, 0.7);
         border-radius: 50%;
 
@@ -71,7 +70,7 @@
         box-shadow: 0px 16.82px 4.49px rgba(153, 114, 23, 0.25);
 
         @media screen and (min-width: 768px) {
-            width: 336px;
+            max-width: 336px;
             margin: 0;
         }
     }
