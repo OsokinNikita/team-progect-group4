@@ -1,18 +1,15 @@
-.contacts {
-  background: #84a178;
-  position: relative;
-}
+// .contacts {
+// }
 .contacts__container{
  
- position: absolute;
- top: -340px;
- left: 50%;
- transform: translateX(-50%);
+padding-top: 48px;
+padding-bottom: 10px;
+ 
   @media screen and (min-width: 768px) {
-    top: -300px;
+   padding-top: 80px;
 }
 @media screen and (min-width: 1200px) {
-    top: -95px;
+    padding-top: 90px;
 }
 }
 .contacts__list {
