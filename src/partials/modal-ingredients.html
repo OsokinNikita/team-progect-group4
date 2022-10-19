@@ -12,7 +12,7 @@
 <!-- Modal ingredients -->
 <div class="backdrop is-hidden" data-modal-ing>
   <div class="modal modal-ing">
-    <button class="button-close" type="button" data-modal-ing-ice-close>
+    <button class="button-close" type="button" data-modal-ing-close>
       <svg class="button-close__icon">
         <use href="./image/icons.svg#modal-close"></use>
       </svg>
@@ -20,7 +20,7 @@
     <strong class="modal__title modal__title-ingredients">
       Chololate icecream
     </strong>
-    <div class="ingredients__box-img">
+    <div class="ingredients__img-box">
       <img
         class="ingredients__img"
         srcset="
@@ -29,10 +29,10 @@
         "
         src="./image/mobile/icecream-1x.jpg"
         alt="ice-cream"
-        width="212"
-        height="141"
+        width="170"
+        height="132"
       />
-      <div class="circle"></div>
+      <div class="circle circle-ice-cr"></div>
     </div>
     <h2 class="ingredients-title">Ingredients</h2>
 
@@ -78,9 +78,9 @@
       </li>
     </ul>
     <form class="register-form" name="register-form">
-      <div class="register-form__group" role="group">
+      <div class="register-form__group register-form__group-ing" role="group">
         <input
-          class="register-form__input"
+          class="register-form__input register-form__input-ing"
           type="text"
           name="name"
           placeholder="Name"
@@ -89,7 +89,7 @@
           title="Username must be two words separated by space."
         />
         <input
-          class="register-form__input"
+          class="register-form__input register-form__input-ing"
           type="tel"
           name="phone"
           placeholder="Phone"
@@ -100,7 +100,7 @@
           title="Phone must be 000-000-00-00"
         />
         <textarea
-          class="register-form__textarea"
+          class="register-form__textarea register-form__textarea-ing"
           name="comment"
           cols="10"
           rows="10"
@@ -115,13 +115,13 @@
 <!-- Ice coffee ingredients -->
 <div class="backdrop is-hidden" data-modal-ing-ice>
   <div class="modal modal-ing">
-    <button class="button-close" type="button" data-modal-ing-milk-close>
+    <button class="button-close" type="button" data-modal-ing-ice-close>
       <svg class="button-close__icon">
         <use href="./image/icons.svg#modal-close"></use>
       </svg>
     </button>
     <strong class="modal__title modal__title-ingredients"> Ice coffee </strong>
-    <div class="ingredients__box-img">
+    <div class="ingredients__img-box">
       <img
         class="ingredients__img"
         srcset="
@@ -130,10 +130,10 @@
         "
         src="./image/mobile/ice-coffee-1x.jpg"
         alt="ice-cream"
-        width="212"
-        height="141"
+        width="202"
+        height="132"
       />
-      <div class="circle"></div>
+      <div class="circle circle-ice-cof"></div>
     </div>
     <h2 class="ingredients-title">Ingredients</h2>
 
@@ -216,13 +216,13 @@
 <!-- Milkshakes ingredients -->
 <div class="backdrop is-hidden" data-modal-ing-milk>
   <div class="modal modal-ing">
-    <button class="button-close" type="button" data-modal-ing-close>
+    <button class="button-close" type="button" data-modal-ing-milk-close>
       <svg class="button-close__icon">
         <use href="./image/icons.svg#modal-close"></use>
       </svg>
     </button>
     <strong class="modal__title modal__title-ingredients"> Ice coffee </strong>
-    <div class="ingredients__box-img">
+    <div class="ingredients__img-box">
       <img
         class="ingredients__img"
         srcset="
@@ -231,16 +231,16 @@
         "
         src="./image/mobile/milkshake-1x.jpg"
         alt="ice-cream"
-        width="212"
-        height="141"
+        width="186"
+        height="132"
       />
-      <div class="circle"></div>
+      <div class="circle circle-milk"></div>
     </div>
     <h2 class="ingredients-title">Ingredients</h2>
 
     <ul class="ingredients__calories-box">
       <li class="ingredients__calories">
-        <p class="ingredients__number ingredients__number-milk">65</p>
+        <p class="ingredients__number ingredients__number-milk">119</p>
         <p class="ingredients__name ingredients__name-milk">kcal</p>
       </li>
       <li class="ingredients__calories">
@@ -248,11 +248,11 @@
         <p class="ingredients__name ingredients__name-milk">Prote...</p>
       </li>
       <li class="ingredients__calories">
-        <p class="ingredients__number ingredients__number-milk">6g</p>
+        <p class="ingredients__number ingredients__number-milk">4g</p>
         <p class="ingredients__name ingredients__name-milk">Fats</p>
       </li>
       <li class="ingredients__calories">
-        <p class="ingredients__number ingredients__number-milk">35g</p>
+        <p class="ingredients__number ingredients__number-milk">175g</p>
         <p class="ingredients__name ingredients__name-milk">Carbs</p>
       </li>
     </ul>
@@ -260,22 +260,22 @@
     <ul class="ingredients__list">
       <li>
         <ul class="ingredients__list-left">
-          <p>Water</p>
-          <p>Black coffee</p>
-          <p>Cinnamon</p>
-          <p>Thick cream</p>
-          <p>Ice</p>
+          <p>Ice cream</p>
+          <p>Milk</p>
+          <p>Black chocolate</p>
+          <p>Chocolate syrup</p>
+          <p>Cream</p>
           <p>Sugar</p>
         </ul>
       </li>
       <li>
         <ul class="ingredients__list-right">
-          <p>100ml</p>
-          <p>7g</p>
-          <p>1st</p>
-          <p>35g</p>
-          <p>5cub</p>
-          <p>5g</p>
+          <p>200ml</p>
+          <p>80ml</p>
+          <p>10g</p>
+          <p>20g</p>
+          <p>25g</p>
+          <p>20g</p>
         </ul>
       </li>
     </ul>
@@ -316,3 +316,4 @@
 
 <script src="./js/modal-ing.js"></script>
 <script src="./js/modal-ing-ice.js"></script>
+<script src="./js/modal-ing-milk.js"></script>

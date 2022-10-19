@@ -1,3 +1,10 @@
+.modal__title-franchise {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
 .modal__text-ing {
   margin-bottom: 24px;
 }

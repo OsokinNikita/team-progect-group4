@@ -1,14 +1,18 @@
 .modal {
-  &__title-map {
+  &__title-location {
     margin-bottom: 22px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
   }
 }
 .modal-location {
-  height: 100%;
+  height: 98%;
   overflow-y: scroll;
 }
 
-// Map
+// Maps
 .location {
   position: relative;
   margin-bottom: 22px;
