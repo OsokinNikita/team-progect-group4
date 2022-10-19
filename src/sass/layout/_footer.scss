@@ -10,7 +10,20 @@
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 11px;
-     padding-top: 670px;
+    padding-top: 670px;
+  }
+
+  .container {
+    min-width: 320px;
+    max-width: 480px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
   }
 }
 
@@ -95,12 +108,11 @@
   }
 }
 .footer-socials__link-icon {
-&:hover .footer-socials__icon,
-&:focus .footer-socials__icon {
-fill: #fff;
+  &:hover .footer-socials__icon,
+  &:focus .footer-socials__icon {
+    fill: #fff;
+  }
 }
-}
-
 
 .footer-socials__list {
   display: flex;
