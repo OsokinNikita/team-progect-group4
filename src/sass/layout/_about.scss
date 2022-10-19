@@ -132,7 +132,7 @@
         margin: 0 auto;
 
         @media screen and (min-width: 768px) {
-            max-width: 336px;
+            max-width: 335px;
             margin: 0;
         }
 
@@ -198,11 +198,13 @@
 
         @media screen and (min-width: 768px) {
             display: block;
+            width: 80%;
             line-height: calc(23 / 12);
             letter-spacing: 0.04em;
         }
 
         @media screen and (min-width: 1200px) {
+            width: 100%;
             font-size: 14px;
             line-height: calc(27 / 14);
         }
