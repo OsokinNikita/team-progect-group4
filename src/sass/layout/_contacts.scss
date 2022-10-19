@@ -2,14 +2,16 @@
 // }
 .contacts__container{
  
-padding-top: 48px;
-padding-bottom: 10px;
+
+padding-bottom: 39px;
  
   @media screen and (min-width: 768px) {
-   padding-top: 80px;
+  
+   padding-bottom: 40px;
 }
 @media screen and (min-width: 1200px) {
-    padding-top: 90px;
+    
+    padding-bottom: 120px;
 }
 }
 .contacts__list {
@@ -230,6 +232,11 @@ padding-bottom: 20px;
 .contacts__buttons_item {
      &:not(:last-child) {
     margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+    
+   margin-bottom: 0;
+    
+}
   }
 
 }
