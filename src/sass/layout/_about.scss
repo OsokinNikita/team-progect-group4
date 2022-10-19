@@ -129,31 +129,17 @@
 
     &__group {
         max-width: 220px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
 
         @media screen and (min-width: 768px) {
             max-width: 335px;
-            margin: 0;
+            margin-bottom: 48px;
         }
 
         @media screen and (min-width: 1200px) {
             max-width: 463px;
-        }
-    }
-
-    &__list {
-        margin-bottom: 20px;
-
-        @media screen and (min-width: 768px) {
-            margin-bottom: 48px;
-        }
-    }
-
-    &__item {
-        margin-bottom: 4px;
-
-        @media screen and (min-width: 768px) {
-            margin-bottom: 8px;
         }
     }
 
@@ -170,8 +156,13 @@
     }
 
     &__text--first {
+        margin-bottom: 4px;
         line-height: calc(21 / 12);
         letter-spacing: 0.04em;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 8px;
+        }
 
         @media screen and (min-width: 1200px) {
             font-size: 16px;
@@ -185,6 +176,7 @@
         @media screen and (min-width: 768px) {
             line-height: calc(21 / 12);
             letter-spacing: 0.04em;
+            margin-bottom: 8px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -215,13 +207,12 @@
         justify-content: center;
         align-items: center;
         gap: 5px;
-        margin: 0 auto;
+
         font-weight: 600;
         font-size: 14px;
         line-height: calc(18 / 14);
 
         color: #131313;
-
         background-color: #F8D24E;
 
         padding: 12px 24px;
