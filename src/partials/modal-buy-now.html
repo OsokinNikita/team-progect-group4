@@ -6,42 +6,44 @@
         <use href="./image/icons.svg#modal-close"></use>
       </svg>
     </button>
-    <strong class="modal__title modal__title-buy">Buy now</strong>
+    <strong class="modal__title">Buy now</strong>
     <ul class="cards">
       <li class="cards__list">
         <div class="cards__thumb">
           <input
-            class="cards__checkbox visually-hidden"
-            id="checkbox"
+            class="cards__checkbox-1 visually-hidden"
+            id="checkbox-1"
             type="checkbox"
             name="checkbox"
             value="checkbox"
           />
-          <label for="checkbox">
+          <label for="checkbox-1">
             <img
               class="cards__img"
-              scrset="./image/mobile/product1.jpg 1x, 
-                ./image/mobile/product1-x2.jpg 2x"
+              srcset="
+                ./image/mobile/product1.jpg    1x,
+                ./image/mobile/product1-x2.jpg 2x
+              "
               src="./image/mobile/product1.jpg"
               alt="ice-cream"
               width="132"
               height="132"
             />
-            <div class="cards__circle"></div>
-            <p class="cards__name">ice cream</p>
+            <span class="cards__circle"></span>
+            <span class="cards__name cards__name-1">ice cream</span>
           </label>
         </div>
       </li>
       <li class="cards__list">
         <div class="cards__thumb">
           <input
-            class="cards__checkbox visually-hidden"
-            id="checkbox"
+            class="cards__checkbox-2 visually-hidden"
+            id="checkbox-2"
             type="checkbox"
             name="checkbox"
             value="checkbox"
           />
-          <label for="checkbox">
+          <label for="checkbox-2">
             <img
               class="cards__img"
               srcset="
@@ -53,34 +55,34 @@
               width="132"
               height="132"
             />
-            <div class="cards__circle cards__circle-2"></div>
-            <p class="cards__name cards__name-2">ice coffee</p>
+            <span class="cards__circle cards__circle-2"></span>
+            <span class="cards__name cards__name-2">ice coffee</span>
           </label>
         </div>
       </li>
       <li class="cards__list">
         <div class="cards__thumb">
           <input
-            class="cards__checkbox visually-hidden"
-            id="checkbox"
+            class="cards__checkbox-3 visually-hidden"
+            id="checkbox-3"
             type="checkbox"
             name="checkbox"
             value="checkbox"
           />
-          <label for="checkbox">
+          <label for="checkbox-3">
             <img
               class="cards__img"
               srcset="
                 ./image/mobile/product3.jpg    1x,
-                ./image/mobile/product3-x2.jpg 1x
+                ./image/mobile/product3-x2.jpg 2x
               "
               src="./image/mobile/product3.jpg"
               alt="ice-cream"
               width="132"
               height="132"
             />
-            <div class="cards__circle cards__circle-3"></div>
-            <p class="cards__name cards__name-3">milkshake</p>
+            <span class="cards__circle cards__circle-3"></span>
+            <span class="cards__name cards__name-3">milkshake</span>
           </label>
         </div>
       </li>
