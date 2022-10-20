@@ -112,7 +112,7 @@ function onVisibleSpaceListener(elementId, cbIn, cbOut) {
 }
 
 onVisibleSpaceListener(
-  'anchor',
+  'counter-hero',
   el => {
     start();
   },
