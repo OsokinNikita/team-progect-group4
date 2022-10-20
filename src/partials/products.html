@@ -4,44 +4,6 @@
     <h2 class="product__header">products</h2>
     <ul class="product-list list">
       <li class="product-list__items product-list__items-ice">
-        <div class="product-list__background-ice">
-          <picture>
-            <source
-              srcset="
-                ./image/desctop/product1.jpg   1x,
-                ./image/desctop/product1x2.jpg 2x
-              "
-              type="image/jpg"
-              media="(min-width:1200px)"
-            />
-
-            <source
-              srcset="
-                ./image/tablet/product1.jpg    1x,
-                ./image/tablet/product1-x2.jpg 2x
-              "
-              type="image/jpg"
-              media="(min-width:768px)"
-            />
-
-            <source
-              srcset="
-                ./image/mobile/product1.jpg    1x,
-                ./image/mobile/product1-x2.jpg 2x
-              "
-              type="image/jpg"
-              media="(max-width:767px)"
-            />
-
-            <img
-              class="product-list__img"
-              src="./image/mobile/product1.jpg"
-              alt="морозиво"
-              width="200px"
-              height="200px"
-            />
-          </picture>
-        </div>
         <h3 class="product-list__name">ICE CREAM</h3>
 
         <p class="product-list__descr">
@@ -60,44 +22,6 @@
         </button>
       </li>
       <li class="product-list__items product-list__items-coffee">
-        <div class="product-list__background-coffee">
-          <picture>
-            <source
-              srcset="
-                ./image/desctop/product2.jpg   1x,
-                ./image/desctop/product2x2.jpg 2x
-              "
-              type="image/jpg"
-              media="(min-width:1200px)"
-            />
-
-            <source
-              srcset="
-                ./image/tablet/product2.jpg    1x,
-                ./image/tablet/product2-x2.jpg 2x
-              "
-              type="image/jpg"
-              media="(min-width:768px)"
-            />
-
-            <source
-              srcset="
-                ./image/mobile/product2.jpg    1x,
-                ./image/mobile/product2-x2.jpg 2x
-              "
-              type="image/jpg"
-              media="(max-width:767px)"
-            />
-
-            <img
-              class="product-list__img"
-              src="./image/mobile/product2.jpg"
-              alt="холодна кава"
-              width="200px"
-              height="200px"
-            />
-          </picture>
-        </div>
         <h3 class="product-list__name">ICE COFFEE</h3>
 
         <p class="product-list__descr">
@@ -105,51 +29,17 @@
           without the use of preservatives and flavor enhancers
         </p>
 
-        <button class="product-list__open-btn" type="button" data-modal-open>
+        <button
+          class="product-list__open-btn"
+          type="button"
+          data-modal-ing-ice-open
+        >
           <svg class="icon" width="40px" height="15px">
             <use href="./image/icons.svg#icon-Arrow-1"></use>
           </svg>
         </button>
       </li>
       <li class="product-list__items product-list__items-milkshakes">
-        <div class="product-list__background-milkshakes">
-          <picture>
-            <source
-              srcset="
-                ./image/desctop/product3.jpg   1x,
-                ./image/desctop/product2x2.jpg 2x
-              "
-              type="image/jpg"
-              media="(min-width:1200px)"
-            />
-
-            <source
-              srcset="
-                ./image/tablet/product3.jpg    1x,
-                ./image/tablet/product3-x2.jpg 2x
-              "
-              type="image/jpg"
-              media="(min-width:768px)"
-            />
-
-            <source
-              srcset="
-                ./image/mobile/product3.jpg    1x,
-                ./image/mobile/product3-x2.jpg 2x
-              "
-              type="image/jpg"
-              media="(max-width:767px)"
-            />
-
-            <img
-              class="product-list__img"
-              src="./image/mobile/product3.jpg"
-              alt="молочний коктейль"
-              width="200px"
-              height="200px"
-            />
-          </picture>
-        </div>
         <h3 class="product-list__name">MILKSHAKES</h3>
 
         <p class="product-list__descr">
@@ -157,7 +47,11 @@
           fruits, berries and other sweets of your choice
         </p>
 
-        <button class="product-list__open-btn" type="button" data-modal-open>
+        <button
+          class="product-list__open-btn"
+          type="button"
+          data-modal-ing-milk-open
+        >
           <svg class="icon" width="40px" height="15px">
             <use href="./image/icons.svg#icon-Arrow-1"></use>
           </svg>
