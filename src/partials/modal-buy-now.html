@@ -1,18 +1,12 @@
-<div class="container">
-  <button class="button button__hero" type="button" data-modal-buy-open>
-    Buy now modal
-  </button>
-</div>
-
 <!-- Buy now modal -->
-<div class="backdrop is-hidden" data-modal-buy>
-  <div class="modal">
-    <button class="button-close" type="button" data-modal-buy-close>
+<div class="backdrop is-hidden" id="data-modal-buy">
+  <div class="modal modal-buy">
+    <button class="button-close" type="button" id="data-modal-buy-close">
       <svg class="button-close__icon">
         <use href="./image/icons.svg#modal-close"></use>
       </svg>
     </button>
-    <strong class="modal__title">Buy now</strong>
+    <strong class="modal__title modal__title-buy">Buy now</strong>
     <ul class="cards">
       <li class="cards__list">
         <div class="cards__thumb">
@@ -125,5 +119,3 @@
     </form>
   </div>
 </div>
-
-<script src="./js/modal-buy.js"></script>
