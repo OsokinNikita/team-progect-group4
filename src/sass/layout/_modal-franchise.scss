@@ -1,10 +1,14 @@
-.modal__title-franchise {
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 24px;
+.modal {
+  &__title-franchise {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 24px;
+    }
   }
-}
-.modal__text-ing {
-  margin-bottom: 24px;
+  &__text-fran {
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
 }
