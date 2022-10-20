@@ -5,3 +5,4 @@ import './js/header-scrol';
 import './js/increasing-numbers';
 import './js/btn-up';
 import './js/reviews-pagination';
+import './js/gallery-slider';

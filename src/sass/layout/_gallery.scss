@@ -1,11 +1,12 @@
-
 .galery__slider {
   display: block;
   margin: 0 auto;
+}
+.galery__slide {
   width: 279px;
-  height: 130.03px;
+  height: 130px;
   overflow: hidden;
-  border-radius: 7.40681px;
+  border-radius: 7.4px;
   @media screen and (min-width: 768px) {
     width: 704px;
     height: 327px;
@@ -20,7 +21,6 @@
 .galery__container {
   position: relative;
   padding-top: 10px;
-
 }
 .midle {
   position: relative;
@@ -61,20 +61,20 @@ input[name='r'] {
   visibility: hidden;
 }
 
-.galery__sliders {
+/* .galery__sliders {
   width: 400%;
   height: 100%;
   display: flex;
-}
-.galery__slide {
+} */
+/* .galery__slide {
   width: 25%;
   transition: all 0.6s ease;
-}
+} */
 .galery__slide img {
   width: 100%;
   height: 100%;
 }
-#r1:checked ~ .s1 {
+/* #r1:checked ~ .s1 {
   margin-left: 0%;
 }
 #r2:checked ~ .s1 {
@@ -82,50 +82,78 @@ input[name='r'] {
 }
 #r3:checked ~ .s1 {
   margin-left: -50%;
+} */
+
+.slider__before,
+.slider__after {
+  cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  width: auto;
+  margin-top: -15px;
+  padding: 16px;
+  color: rgba(248, 210, 78, 1);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 85px;
+  user-select: none;
 }
+.slider__before {
+  left: 0;
+}
+.slider__after {
+  right: 0;
+}
+.slider__before:hover,
+.slider__after:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: rgba(110, 110, 110, 0.3);
+  color: #ffffff;
+}
+
 .container-wrapper {
- 
   padding-top: 10px;
   padding-bottom: 10px;
   margin-top: -1px;
   margin-bottom: -1px;
-//   background-image: linear-gradient(
-//       to bottom,
-//       #84a178 7%,
-//       transparent 7%,
-//       transparent 78%,
-//       #84a178 78%,
-//       #84a178
-//     ),
-//     url('../image/mobile/backgraund-4-block.jpg');
+  //   background-image: linear-gradient(
+  //       to bottom,
+  //       #84a178 7%,
+  //       transparent 7%,
+  //       transparent 78%,
+  //       #84a178 78%,
+  //       #84a178
+  //     ),
+  //     url('../image/mobile/backgraund-4-block.jpg');
 
   @media screen and (min-width: 320px) {
     background-image: linear-gradient(
-      to bottom,
-      #84a178 2%,
-      transparent 2%,
-      transparent 49%,
-      #84a178 49%,
-      #84a178
-    ),
-    url('../image/mobile/backgraund-4-block.jpg');
-
+        to bottom,
+        #84a178 2%,
+        transparent 2%,
+        transparent 49%,
+        #84a178 49%,
+        #84a178
+      ),
+      url('../image/mobile/backgraund-4-block.jpg');
   }
   @media screen and (min-width: 320px) and (min-device-pixel-ratio: 2),
-    screen and (min-width: 320px)  and (min-resolution: 192dpi),
+    screen and (min-width: 320px) and (min-resolution: 192dpi),
     screen and (min-width: 320px) and (min-resolution: 2dppx) {
     background-image: linear-gradient(
-      to bottom,
-      #84a178 2%,
-      transparent 2%,
-      transparent 49%,
-      #84a178 49%,
-      #84a178
-    ),
-    url('../image/mobile/backgraund-4-block-x2.jpg');
+        to bottom,
+        #84a178 2%,
+        transparent 2%,
+        transparent 49%,
+        #84a178 49%,
+        #84a178
+      ),
+      url('../image/mobile/backgraund-4-block-x2.jpg');
   }
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     background-image: linear-gradient(
         to bottom,
         #84a178 12%,
