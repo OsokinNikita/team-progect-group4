@@ -6,3 +6,4 @@ import './js/btn-up';
 import './js/reviews-pagination';
 import './js/counter-hero';
 import './js/counter-advantages';
+import './js/gallery-slider';

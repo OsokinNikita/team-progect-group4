@@ -1,10 +1,9 @@
-<section class="section">
+<section class="section" id="gallery">
   <div class="container galery__container">
     <h2 class="visually-hidden">galery tablle</h2>
     <div class="galery__slider midle">
-   <div class="galery__sliders">
-   
-      
+      <a class="slider__before sliderBefore">&#10094;</a>
+      <div class="galery__sliders">
         <input type="radio" name="r" id="r1" checked />
         <input type="radio" name="r" id="r2" />
         <input type="radio" name="r" id="r3" />
@@ -93,11 +92,12 @@
             />
           </picture>
         </div>
-    </div>
+      </div>
+      <a class="slider__after sliderAfter">&#10095;</a>
       <div class="galery__navigation">
-        <label for="r1" class="galery__bar"></label>
-        <label for="r2" class="galery__bar"></label>
-        <label for="r3" class="galery__bar"></label>
+        <label for="r1" data-number="1" class="galery__bar"></label>
+        <label for="r2" data-number="2" class="galery__bar"></label>
+        <label for="r3" data-number="3" class="galery__bar"></label>
       </div>
     </div>
   </div>
