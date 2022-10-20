@@ -261,6 +261,7 @@
 
 .btn-up {
   position: fixed;
+  z-index: 9;
   background-color: #f8d34e81;
   backdrop-filter: blur(4px);
   right: 20px;
