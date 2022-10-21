@@ -15,7 +15,11 @@
 // Maps
 .location {
   position: relative;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 
   &__map {
     width: 224px;
@@ -41,7 +45,9 @@
     padding: 5px 10px;
     font-size: 12px;
     line-height: calc(15 / 12);
+
     color: var(--main-color);
+
     background-color: var(--accent-color);
     border-radius: 10px;
     border: none;
@@ -54,7 +60,9 @@
     padding: 5px 10px;
     font-size: 12px;
     line-height: calc(15 / 12);
+
     color: var(--main-color);
+
     background-color: var(--bg-primary-color);
     border-radius: 10px;
     border: none;
@@ -65,9 +73,27 @@
 }
 
 // Button-link Open map
-.button-link {
-  display: flex;
-  justify-content: center;
+.btn-link {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(18 / 12);
+  margin-left: auto;
+  margin-right: auto;
+  width: 134px;
+  padding: 12px 0px;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+  text-decoration: none;
+  color: currentColor;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    width: 145px;
+  }
 }
 .btn-link:focus {
   color: var(--t-btn-focus-color);
