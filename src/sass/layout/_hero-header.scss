@@ -3,7 +3,7 @@
 }
 
 .hero {
-  background-color: var(--main-color-bg);
+  background-color: #84a178;
 
   .container {
     position: relative;
@@ -21,15 +21,15 @@
 
   .title {
     margin: 0;
-    font-family: var(--secondary-font);
-    font-weight: var(--secondary-font-size);
+    font-family: 'Seymour One';
+    font-weight: 400;
     font-size: 26px;
     line-height: calc(33 / 26);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     max-width: 290px;
 
-    color: var(--main-text-color);
+    color: #fcfcfc;
 
     &--bigger-size {
       font-size: 34px;
@@ -86,53 +86,54 @@
     margin: 0;
     cursor: pointer;
 
-    color: var(--accent-color);
-    font-family: var(--main-font);
-    font-weight: var(--main-font-weight);
+    color: #f8d24e;
+    font-family: 'Montserrat';
+    font-weight: 600;
     font-size: 8px;
     line-height: calc(10 / 8);
     text-decoration-line: underline;
     border: 2px solid transparent;
-    transition: color var(--animation), border var(--animation);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 1200px) {
-      font-size: var(--secondary-font-size);
+      font-size: 14px;
       line-height: calc(18 / 14);
       padding: 12px 34px;
     }
 
     &--border {
-      border: 2px solid var(--accent-color);
+      border: 2px solid #f8d24e;
       border-radius: 8px;
-      color: var(--secondary-text-color);
+      color: #131313;
       text-decoration: none;
 
       &:hover {
-        border: 2px solid var(--bg-btn-focus-color);
+        border: 2px solid #0a8817;
       }
 
       &:focus {
-        border: 2px solid var(--bg-btn-focus-color);
-        color: var(--main-text-color);
+        border: 2px solid #0a8817;
+        color: #fcfcfc;
       }
     }
 
     &--disabled {
-      border: 2px solid var(--bg-modal-disabled-color);
+      border: 2px solid #ababab;
     }
 
     &--underline {
       &:hover {
-        color: var(--bg-btn-focus-color);
+        color: #0a8817;
       }
 
       &:focus {
-        color: var(--main-text-color);
+        color: #fcfcfc;
       }
     }
 
     &--disabled {
-      color: var(--bg-modal-disabled-color);
+      color: #ababab;
     }
   }
 
@@ -156,17 +157,17 @@
 
   &__desc {
     max-width: 151px;
-    font-family: var(--main-font);
-    font-weight: var(--secondary-font-size);
-    font-size: var(--main-font-size);
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
     line-height: calc(17 / 12);
 
-    color: var(--main-text-color);
+    color: #fcfcfc;
 
     margin-bottom: 13px;
 
     @media screen and (min-width: 1200px) {
-      font-size: var(--secondary-font-size);
+      font-size: 14px;
       line-height: calc(20 / 14);
       max-width: 200px;
       margin-bottom: 25px;
@@ -174,7 +175,7 @@
   }
 
   &__icon {
-    fill: var(--main-text-color);
+    fill: #fcfcfc;
   }
 
   &__chain-list {
@@ -200,16 +201,16 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    font-family: var(--main-font);
-    font-weight: var(--secondary-font-size);
+    font-family: 'Montserrat';
+    font-weight: 400;
     font-size: 8px;
     line-height: calc(10 / 8);
     text-align: right;
 
-    color: var(--main-text-color);
+    color: #fcfcfc;
 
     @media screen and (min-width: 1200px) {
-      font-size: var(--secondary-font-size);
+      font-size: 14px;
       line-height: calc(17 / 14);
     }
   }
@@ -221,7 +222,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: var(--secondary-text-color);
+    color: #131313;
 
     @media screen and (min-width: 1200px) {
       font-size: 46px;
@@ -293,7 +294,7 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  transition: background-color var(--animation);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-up::before {
@@ -311,6 +312,6 @@
 
 @media (hover: hover) and (pointer: fine) {
   .btn-up:hover {
-    background-color: var(--accent-color);
+    background-color: #f8d34e;
   }
 }
