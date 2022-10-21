@@ -128,12 +128,12 @@
 }
 .contacts__opening-hours {
   padding: 25px 0;
-  margin-bottom: 25px;
+  // margin-bottom: 25px;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   @media screen and (min-width: 768px) {
     padding: 32px 0;
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
   }
 }
 .contacts__opening-hours_item {
@@ -175,8 +175,12 @@
     font-size: 16px;
   }
 }
-// .contacts__mail-tel {
-// }
+.contacts__mail-tel {
+  padding-top: 25px;
+   @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+  }
+}
 // .contacts__mail-tel_item {
 // }
 .contacts__link {
