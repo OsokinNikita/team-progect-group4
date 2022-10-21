@@ -5,19 +5,18 @@
 .hero {
   background-color: #84a178;
 
-  position: relative;
-
-  padding: 110px 20px 239px 20px;
-
-  @media screen and (min-width: 768px) {
-    padding: 104px 32px 14px 32px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding: 118px 16px 65px 17px;
-  }
-
   .container {
+    position: relative;
+
+    padding: 110px 20px 239px 20px;
+
+    @media screen and (min-width: 768px) {
+      padding: 104px 32px 14px 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding: 118px 16px 65px 17px;
+    }
   }
 
   .title {
