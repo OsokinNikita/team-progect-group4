@@ -183,7 +183,7 @@
     left: 20px;
   }
   @media screen and (min-width: 1200px) {
-    left: 0;
+    left: -10%;
   }
 }
 .slider__next {
@@ -198,7 +198,7 @@
     right: 20px;
   }
   @media screen and (min-width: 1200px) {
-    right: 0;
+    right: -10%;
   }
 }
 .slider__prev:hover,
