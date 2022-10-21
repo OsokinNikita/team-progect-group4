@@ -45,7 +45,9 @@
     padding: 5px 10px;
     font-size: 12px;
     line-height: calc(15 / 12);
-    color: var(--secondary-text-color);
+
+    color: var(--main-color);
+
     background-color: var(--accent-color);
     border-radius: 10px;
     border: none;
@@ -58,7 +60,9 @@
     padding: 5px 10px;
     font-size: 12px;
     line-height: calc(15 / 12);
-    color: var(--secondary-text-color);
+
+    color: var(--main-color);
+
     background-color: var(--bg-primary-color);
     border-radius: 10px;
     border: none;

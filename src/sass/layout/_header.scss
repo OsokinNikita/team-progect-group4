@@ -6,8 +6,8 @@
   &.no-transparency {
     background-color: #84a178b8;
     backdrop-filter: blur(4px);
-    transition: background-color var(--animation),
-      background-filter var(--animation);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__container {
@@ -48,21 +48,22 @@
     }
 
     &__link {
-      font-family: var(--main-font);
+      font-family: 'Montserrat';
       font-weight: 700;
       font-size: 16px;
       line-height: calc(20 / 16);
+      line-height: 20px;
       padding: 40px 0;
-      color: var(--main-text-color);
+      color: #fcfcfc;
       text-decoration: none;
-      transition: color var(--animation);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover,
       &:focus {
-        color: var(--secondary-text-color);
+        color: #131313;
 
         @media screen and (min-width: 1200px) {
-          color: var(--accent-color);
+          color: #f8d24e;
         }
       }
     }
@@ -89,7 +90,7 @@
   &.header__btn {
     margin: 24px 0;
 
-    font-size: var(--secondary-font-size);
+    font-size: 14px;
     line-height: calc(17 / 14);
 
     @media screen and (max-width: 767px) {
